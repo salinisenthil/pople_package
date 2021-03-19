@@ -8,3 +8,4 @@ def atno(at):
     else:
         with open("Thermochemistry.out", "a") as ther_chem:
             ther_chem.write("Error: unknown element type encoutered in atno in module_geom.f90: " + str(at)+ " \n")
+
