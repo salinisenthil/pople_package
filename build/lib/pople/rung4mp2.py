@@ -11,7 +11,16 @@ from pople_test import runorca
 
 
 ####### rung4mp2 - S
-def rung4mp2(values, start_time_main):  
+def rung4mp2(values, start_time_main): 
+    """
+    Runs g4mp2
+
+            Parameters:
+                    values (dict): Values of the control variables mentioned by user in control.inp
+                    start_time_main (float) :  Initial start time of the program pople.run()
+
+    """
+ 
     if values["isatom"] == "true": Nat=1
     os.system("cat inp.xyz")
 

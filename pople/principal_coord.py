@@ -1,4 +1,13 @@
 def principal_coord():
+    """
+    Returns eigen value
+    Requires input.xyz to be present in pwd. input.xyz contains the cartesian coordinates of the molecule/radical/ion in xyz format
+    Used to characterize if the system is linear/non-linear
+
+            Returns:
+                Ievals  (list, float): Eigen values
+    """
+
     with open("input.xyz","r") as xyz_f:
         num_l_xyz = sum(1 for l in xyz_f)
         Nat = int(linecache.getline("input.xyz",1).strip())

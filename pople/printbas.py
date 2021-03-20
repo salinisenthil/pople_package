@@ -3,8 +3,16 @@ import linecache, math
 import numpy as np
 
 
-def printbas(fname, at, install_dir_val):  # fname = value of the  basis set name from the inp file,  install_dir_val = value from initial input file by user
-    #print("===Entering printbas with: ", fname, at, " ===")
+def printbas(fname, at, install_dir_val):  
+    """
+    Prints the basis set parameters into the input file input.com
+
+            Parameters:
+                    fname (char): Basis set name
+                    at (char): Symbol of the element
+                    install_dir_val (char) : Path to the directory containing basis set files
+    """
+
     basisSet_fpath = fname
     start_phrase = "NewGTO   "+ at
     print(start_phrase)
@@ -28,3 +36,4 @@ def printbas(fname, at, install_dir_val):  # fname = value of the  basis set nam
                 new_f.write(req_line_1)
 
         new_f.write("   end\n")
+# fname = value of the  basis set name from the inp file,  install_dir_val = value from initial input file by user

@@ -1,4 +1,15 @@
 def At_SO(at, charge):  # element symbol, charge
+    """
+    Returns the At_SO!! of the element.
+
+            Parameters:
+                    at (char): Symbol of the element
+                    charge (int): Charge on the element
+
+            Returns:
+                    At_SO (float): At_SO!! of the element
+    """
+
     At_SO = 0
     if charge == 0:
         S_dict_0 = {"B" : -0.05, "C" : -0.14, "O" : -0.36, "F" : -0.61, "Al" : -0.34, "Si" : -0.68, "S" : -0.89, "Cl" : -1.34, "Ga" : -2.51, "Ge" : -4.41, "Se" : -4.3,  \

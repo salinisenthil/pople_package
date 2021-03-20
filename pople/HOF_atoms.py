@@ -1,4 +1,14 @@
 def HOF_atoms(at):
+    """
+    Returns the heat of formation of the element.
+
+            Parameters:
+                    at (char): Symbol of the element
+
+            Returns:
+                    HOF_atoms (float): Heat of formation of the element
+    """
+
     h = 6.626070040*(10**-34)    #6.626070040d-34
     Ry = 10973731.568508  #10973731.568508d0
     c = 299792458    #299792458d0

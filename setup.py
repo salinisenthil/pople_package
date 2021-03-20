@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.1.0'
-PACKAGE_NAME = 'pople_test'
-AUTHOR = 'salini'
+VERSION = '1.0.0'
+PACKAGE_NAME = 'pople'
+AUTHOR = 'Salini Senthil'
 AUTHOR_EMAIL = 'salinis@tifrh.res.in'
-URL = 'https://github.com/salinisenthil/pople_test'
+URL = 'https://github.com/salinisenthil/pople'
 
 LICENSE = 'Apache License 2.0'
 DESCRIPTION = 'Describe your package in one sentence'
