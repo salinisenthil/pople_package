@@ -14,9 +14,10 @@ from pople_test import nanb
 
 
 def run():
+    """ Generates the Thermochemistry data for a given molecule."""
     current_dir_path = os.getcwd()
     
-    input_f = current_dir_path + "/initial.inp"
+    input_f = current_dir_path + "/control.inp"
     xyz_path = current_dir_path + "/geom.xyz"
     
     ### declaring units - S

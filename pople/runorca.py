@@ -11,7 +11,19 @@ from pople_test import printbas
 
 ####### runorca - S
 def runorca(method, basis,optfreq,custombasis, correlated, values):
-    #print("=== Entering runorca ===")
+    """
+    Runs orca
+
+            Parameters:
+                    method (char) : Name of functional to be used
+                    basis (char)  :  Basis set name
+                    optfreq (char) : true/false value of the optfreq keyword in control.inp
+                    custombasis (char) : true/false value of the custombasis keyword in control.inp
+                    correlated (char) : true/false value of the coreleated keyword in control.inp
+                    values (dict): Values of the control variables mentioned by user in control.inp 
+
+    """
+
     with open("input.com", "w") as com_f:
         if optfreq == "true":
             if values["verticalIP"] != "true" or values["IPss"] != "true":   # IPss not defined

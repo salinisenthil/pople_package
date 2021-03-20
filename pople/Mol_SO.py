@@ -1,4 +1,18 @@
 def Mol_SO(Nat, multip, charge, sym, SO_3rdrow_mols_val):   # number of atoms, multiplicity, charge, array of atoms in molecule, value of SO_3rdrow_mols (from orca.inp file)
+    """
+    Returns the Mol_SO!! of the element.
+
+            Parameters:
+                    Nat (int): Number of atoms in the molecule
+                    multip (int): Multiplcity of the molecule
+                    charge (int): Charge on the molecule
+                    sym (list, char) : List of atoms in the molecule
+                    SO_3rdrow_mols_val (char) : true/false value of the SO_3rdrow_mols_val keyword
+
+            Returns:
+                    Mol_SO (float): Mol_SO!! of the element
+    """
+
     Mol_SO = 0
     
     # Special Case - Acetleyne - S

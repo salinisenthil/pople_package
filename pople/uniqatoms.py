@@ -1,4 +1,17 @@
 def uniqatoms(sym):  # to fine uniq atoms and the number of occurance of uniq atoms in the molecule
+    """
+    Returns the number of unique atoms in the molecule, along with their symbols and number of occurances
+
+            Parameters:
+                    sym (list, char): List of atoms in the molecule
+
+            Returns:
+                    uniqat_d (dict): Details of number of unique atoms in the molecule
+                    uniqat_d["N_ua"] (int) : Number of unique atom types in the molecule
+                    uniqat_d["uniq_sym"] (list, char) : List of symbols of the unique atoms present in the molecule
+                    uniqat_d["uan"] (list, int) : List of number of occurances of the unique atoms present
+    """
+
 # we want 'ua' unique atom types
 # we want 'uan' no. of unique atoms of each type
 # Ex. C20H42
