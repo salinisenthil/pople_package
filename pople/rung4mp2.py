@@ -4,10 +4,10 @@ import numpy as np
 import datetime , time
 
 
-from pople_test import Mol_SO
-from pople_test import At_SO
-from pople_test import principal_coord
-from pople_test import runorca
+from pople import Mol_SO
+from pople import At_SO
+from pople import principal_coord
+from pople import runorca
 
 
 ####### rung4mp2 - S
@@ -27,9 +27,7 @@ def rung4mp2(values, start_time_main):
 
     if values["isatom"] != "true":
         if values["FROZEN_GEOM"] == "true":
-### NEED TO STORE R, write principal coords here!!!!!
-### NOT DONE : line 696 to 705
-
+            start_time1 = time.time()
             with open("read_geom_freq.dat", "r") as froz_geom:
                 num_l_fg = sum(1 for l in froz_geom)
                 Nat = int(linecache.getline("read_geom_freq.dat",1).strip())
@@ -40,7 +38,6 @@ def rung4mp2(values, start_time_main):
                 for tmp_l in range(3,Nat+2):    ## check range
                     l1_xyz_1 = linecache.getline("read_geom_freq.dat",tmp_l)
                     l1_lsp1 = l1_xyz_1.split()
-                    #full_l = l1_xyz_1.strip()
                     full_l1 = l1_xyz_1.strip().split()
                     full_l = full_l1[0] + "     "+str(round(float(full_l1[1]),8)) + "     "+str(round(float(full_l1[2]),8)) + "     "+str(round(float(full_l1[3]),8))
                     sym_coord.append(full_l)  ## contains atom and coords
@@ -50,20 +47,13 @@ def rung4mp2(values, start_time_main):
                     Rlist.append(l1_lsp1[3])
                     conv = np.array(Rlist)
                     R_coord = np.resize(conv,[Nat,3])
-                nfreq =[]
-                for tmp_j in range(Nat+3, num_l_fg):
+                freq =[]
+                for tmp_j in range(Nat+3, num_l_fg+1):
                     tmp_line = float(linecache.getline("read_geom_freq.dat",tmp_j).strip())
-                    nfreq.append(tmp_line)
+                    freq.append(tmp_line)
 
                 print("freq check")
-                print(nfreq)
-
-## How does read_geom_freq.dat look like????
-#       allocate(freq(1:nfreq), theta(1:nfreq))
-#       do iat = 1, nfreq
-#         !print *, iat
-#         read(10,*)freq(iat)
-#       enddo
+                print(freq)
 
             if Nat > 2:
                 Ievals = principal_coord() # check
@@ -78,15 +68,12 @@ def rung4mp2(values, start_time_main):
             if linnonlin == "NL":   nfreq = 3 * Nat - 6
 
 
-### revisit line 710 
         else:
-
-    #call system_clock(count_start1)
             start_time1 = time.time()
             print("==check isatom==",values["isatom"])
             runorca.runorca(values["method_opt_freq"], values["basis_opt_freq"], "true", values["custombasis_opt_freq"], "false", values)
             end_time1 = time.time()
-    #call system_clock(count_end1, count_rate1)
+
             if values["IPss"] != "true" or values["verticalIP"] != "true":
                 with open("inp.xyz", "r") as new_i_xyz:
                     num_l_in = sum(1 for l in new_i_xyz)
@@ -100,15 +87,12 @@ def rung4mp2(values, start_time_main):
                     Nat = int(linecache.getline("input.xyz",1).strip())
                     title = linecache.getline("input.xyz",2).strip()
                     tl1 = title.split()
-                   #charge = int(tl1[0])
-                   #multip = int(tl1[1])
                     sym = []
                     Rlist = []
                     sym_coord = []
                     for tmp_l in range(3,num_l_in+1):    ## check range
                         l1_xyz_1 = linecache.getline("input.xyz",tmp_l)
                         l1_lsp1 = l1_xyz_1.split()
-                        #full_l = l1_xyz_1.strip()
                         full_l1 = l1_xyz_1.strip().split()
                         full_l = full_l1[0] + "     "+str(round(float(full_l1[1]),8)) + "     "+str(round(float(full_l1[2]),8)) + "     "+str(round(float(full_l1[3]),8))
                         sym_coord.append(full_l)  ## contains atom and coords
@@ -127,53 +111,44 @@ def rung4mp2(values, start_time_main):
                        t_xyz.write(sym_coord[e3] + "\n")
             os.system("mv temp.xyz  inp.xyz")
 
-#head -2 inp.xyz > inp.xyz
-#tail -Nat input.xyz >> inp.xyz
+############################################
+            if Nat > 2:
+                Ievals = principal_coord() # check
+                linnonlin = "NL"
+                if abs(Ievals[0]) < 1*(10**-10):  ## CHECK esp Ievals[0 or 1]
+                    linnonlin = "L"
+            if Nat == 2:    linnonlin = "L"
 
-############################################# REWRITE???
-        if Nat > 2:
-            Ievals = principal_coord() # check
-            linnonlin = "NL"
-            if abs(Ievals[0]) < 1*(10**-10):  ## CHECK esp Ievals[0 or 1]
-                linnonlin = "L"
-        if Nat == 2:    linnonlin = "L"
-
-############################################# REWRITE???
+#############################################
         
-        os.system("nfreq=$( grep 'The total number of vibrations considered is ' input.out  | tail -1 | awk '{print $8}' > scr_lc0);  \
-             nfreq=$( cat scr_lc0); grep -A$(( $nfreq+4 )) 'IR SPECTRUM' input.out | tail -$nfreq | awk '{print $2}' > freq.txt")
+            os.system("nfreq=$( grep 'The total number of vibrations considered is ' input.out  | tail -1 | awk '{print $8}' > scr_lc0);  \
+                 nfreq=$( cat scr_lc0); grep -A$(( $nfreq+4 )) 'IR SPECTRUM' input.out | tail -$nfreq | awk '{print $2}' > freq.txt")
 
     ### need to extract nfreq from scr file
-        tr = linecache.getline("scr_lc0",1).strip()
-        lsp111 = tr.split()
-        nfreq = int(lsp111[0])
-#       open(unit=10, file='scr')
-#       read(10,*) nfreq
-#       close(10)
-        if linnonlin == "NL":
-            if nfreq > (3*Nat)-6:
-                nfreq = (3*Nat)-6
-                os.system("nfreq=$( cat scr_lc0); grep -A$(( $nfreq+4 )) 'IR SPECTRUM' input.out | tail -$(( "+str(nfreq)+" )) | awk '{print $2}' > freq.txt")
-            # write(*,'(a)') trim(cmd)  - IMPORTANTT!!!!!!!!!!!!!!
-## revist ...write statement might be missing
-        freq =[]
-        with open("freq.txt", "r") as fr:
-            num_l_frq = sum(1 for l in fr)
-            for tmp_p in range(1,num_l_frq+1):  # check range
-                tmp_val = float(linecache.getline("freq.txt",tmp_p).strip())
-                freq.append(tmp_val)
-        print("freq check 2", freq)
-   
+            tr = linecache.getline("scr_lc0",1).strip()
+            lsp111 = tr.split()
+            nfreq = int(lsp111[0])
 
-        iopt = 999
-        if values["isatom"] != "true":
-            os.system("grep 'OPTIMIZATION RUN DONE' input.out | wc | awk '{print $1}' > scr_lc1")
-        iopt = int(linecache.getline("scr_lc1",1).strip())
- 
-        os.system("rm -f input* scr freq.txt")
-        #os.system("rm -f scr freq.txt")
-        #os.system("rm -f scr ")
+            if linnonlin == "NL":
+                if nfreq > (3*Nat)-6:
+                    nfreq = (3*Nat)-6
+                    os.system("nfreq=$( cat scr_lc0); grep -A$(( $nfreq+4 )) 'IR SPECTRUM' input.out | tail -$(( "+str(nfreq)+" )) | awk '{print $2}' > freq.txt")
 
+            freq =[]
+            with open("freq.txt", "r") as fr:
+                num_l_frq = sum(1 for l in fr)
+                for tmp_p in range(1,num_l_frq+1):  # check range
+                    tmp_val = float(linecache.getline("freq.txt",tmp_p).strip())
+                    freq.append(tmp_val)
+            print("freq check 2", freq)
+            
+            
+            iopt = 999
+            if values["isatom"] != "true":
+                os.system("grep 'OPTIMIZATION RUN DONE' input.out | wc | awk '{print $1}' > scr_lc1")
+            iopt = int(linecache.getline("scr_lc1",1).strip())
+            
+            os.system("rm -f input* scr freq.txt")
 
     ################################################################################################
 
@@ -190,36 +165,30 @@ def rung4mp2(values, start_time_main):
             for tmp_i in range(len(freq)):
                 new_freq0.write(str(freq[tmp_i]) + "\n")  # check if this is printed in proper format
 
-
     if values["isatom"] != "true":
         with open("Thermochemistry.out", "a") as ther_chem:
             ther_chem.write(" Optimized atomic coordinates (Angstrom)\n")
-            for tmp in range(Nat):  ## CHECK range
+            for tmp in range(Nat-1):  ## CHECK range
                 ther_chem.write(str(sym_coord[tmp]) + "\n")  # writes atoms + coord as from geo,xyz
             ther_chem.write("\n")
 
             ther_chem.write(" Unscaled harmonic wavenumbers (cm^-1)\n")
             tmp = 0
-            #print(nfreq)
             for tmp in range(nfreq): # check range
-                #print(type(values["scalfac"]))# * values["scalfac"])
                 ther_chem.write(str( freq[tmp] ))  
                 ther_chem.write("\n")
 
             ther_chem.write("\n")
             ther_chem.write(" Scaled harmonic wavenumbers (cm^-1)\n")
             tmp = 0
-            #print(nfreq)
             for tmp in range(nfreq): # check range
-                #print(type(values["scalfac"]))# * values["scalfac"])
                 ther_chem.write(str( freq[tmp] * float(values["scalfac"]) ) )  
                 ther_chem.write("\n")
 
             ther_chem.write("\n")
             ther_chem.write(" Scaling factor used:  " + str(values["scalfac"]) + "\n\n")
-            #call system_clock(count_end, count_rate)
             end_time2 = time.time()
-            ther_chem.write(" * Geometry optimization/frequencies done in              " + str(end_time1 - start_time1) + " s\n")
+            ther_chem.write(" * Geometry optimization/frequencies done in              " + str(end_time2 - start_time1) + " s\n")
             ther_chem.write(" ** Elapsed time =              " + str(round(end_time2 -start_time_main,2)) + " s\n")
     else:
         with open("Thermochemistry.out", "a") as ther_chem:
@@ -244,13 +213,6 @@ def rung4mp2(values, start_time_main):
         tl1 = title.split()
         charge = int(tl1[0])
         multip = int(tl1[1])
-  # with open("inp.xyz", "r") as new_i_xyz:
-  #     num_l_in = sum(1 for l in new_i_xyz)
-  #     Nat = int(linecache.getline("inp.xyz",1).strip())
-  #     title = linecache.getline("inp.xyz",2).strip()
-  #     tl1 = title.split()
-       #charge = int(tl1[0])
-       #multip = int(tl1[1])
         sym = []
         Rlist = []
         sym_coord = []
@@ -259,7 +221,6 @@ def rung4mp2(values, start_time_main):
             l1_lsp1 = l1_xyz_1.split()
             #full_l = l1_xyz_1.strip()
             full_l1 = l1_xyz_1.strip().split()
-            print(full_l1)
             full_l = full_l1[0] + "     "+str(round(float(full_l1[1]),8)) + "     "+str(round(float(full_l1[2]),8)) + "     "+str(round(float(full_l1[3]),8))
             sym_coord.append(full_l)  ## contains atom and coords
             sym.append(l1_lsp1[0])
@@ -268,7 +229,6 @@ def rung4mp2(values, start_time_main):
             Rlist.append(l1_lsp1[3])
             conv = np.array(Rlist)
             R_coord = np.resize(conv,[Nat,3])
-#    os.system("rm input*")
 
 
     start_time1 = time.time()
@@ -310,7 +270,6 @@ def rung4mp2(values, start_time_main):
             E_mp2 = float(tmp)
             os.system("rm -f input* scr ")
 
-    ### IMPORTANT --- indentation ERROR!! revisit
     else:
         E_ccsdt = 0
         E_mp2 = 0
@@ -320,22 +279,25 @@ def rung4mp2(values, start_time_main):
         values["switch_guess"] = "true"
         values["ALLELE"] = "true"
 
-    ## POSSIBLE indentation faults from f90 ...ask to recheck , revisit
         if values["Ntotale"] > 0:
             if (values["Notale"] < 1) or (values["Ntotale"] - values["Ntotalecore"] <= 1 ):
                 tmp_method = "HF "
                 if Nat == 1:
                     if values["basis_ccsdt"] == "GTBAS1": values["basis_ccsdt"] = "GTBAS1atm"
                     runorca.runorca(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
+                    #print(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "--1--")
                 else:  # ASK
                     runorca.runorca(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
+                    #print(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "--2--")
             elif (values["Ntotale"] == 2) or (values["Ntotale"] - values["Ntotalecore"] == 1 ):
                 if Nat == 1:
                     if values["basis_ccsdt"] == "GTBAS1": 
                         values["basis_ccsdt"] = "GTBAS1atm"  # check
                         runorca.runorca(values["method_ccsdt_rel"], values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
+                        #print(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "--3--")
                     else:
                         runorca.runorca(values["method_ccsdt_rel"], values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
+                        #print(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "--4--")
             else:
                 if values["restart_cc"] == "true":
                     #charge = charge + 2
@@ -346,17 +308,13 @@ def rung4mp2(values, start_time_main):
                     #charge = charge - 2
                     values["restart_charge"] = values["restart_charge"] - 2
 
-                    #charge = charge + 2
-                    #tmp_method = "HF "
-                    #runorca(tmp_method,values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
-                    #charge = charge - 2
                 runorca.runorca(values["method_ccsdt_rel"], values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "true", values)
+                #print(tmp_method, values["basis_ccsdt_rel"], "false", values["custombasis_ccsdt"], "--5--")
             end_time1 = time.time()
 
             os.system("grep 'FINAL SINGLE POINT ENERGY ' input.out  | awk '{print $5}' > scr_lc3")
             tmp = linecache.getline("scr_lc3",1).strip()
             E_ccsdt_rel = float(tmp)
-    # indent issues IMPORTANT !!!!!!! revisit
         else:
             E_ccsdt_rel = 0
 
@@ -382,21 +340,21 @@ def rung4mp2(values, start_time_main):
     print("block dlpno ccsd check", values["switch_read_RIMP2_small"], values["DLPNO_CCSDT"], "outside")
 ## == TESTING ( comm from f90)
     if values["DLPNO_CCSDT"] == "true":
-        print("block dlpno ccsd check", values["switch_read_RIMP2_small"], values["DLPNO_CCSDT"], "inside")
+        #print("block dlpno ccsd check", values["switch_read_RIMP2_small"], values["DLPNO_CCSDT"], "inside")
         if values["switch_read_RIMP2_small"] != "true":
-            print( multip , values["Ntotale"], values["Ntotalecore"], "ntotale ntotalecore")
+            #print( multip , values["Ntotale"], values["Ntotalecore"], "ntotale ntotalecore")
             if (multip != 1) or (values["switch_RIMP2_small"] == "true") :
                 start_time1 = time.time()
-                print(values["Ntotale"], values["Ntotalecore"], "ntotale ntotalecore")
+                #print(values["Ntotale"], values["Ntotalecore"], "ntotale ntotalecore")
                 if (values["Ntotale"] == "1") or (values["Ntotale"] - values["Ntotalecore"] <= 1) :
                     tmp_method = "HF "
-                    print("block dlpno ccsd check  1")
+                    #print("block dlpno ccsd check  1")
                     runorca.runorca(values["method_mp2_s"], values["basis_mp2_s"], "false", values["custombasis_mp2_s"], "true", values)
                 else:
-                    print("block dlpno ccsd check  2")
+                    #print("block dlpno ccsd check  2")
                     runorca.runorca(values["method_mp2_s"], values["basis_mp2_s"], "false", values["custombasis_mp2_s"], "true", values)
                 end_time1= time.time()
-## why not club thse two???????/
+
                 if (values["Ntotale"] == 1) or (values["Ntotale"] - values["Ntotalecore"] <= 1) :
                     os.system("grep 'Total Energy ' input.out  | awk '{print $4}' > scr_lc4")
                 else:
@@ -431,10 +389,6 @@ def rung4mp2(values, start_time_main):
             #charge = charge - 2
             values["restart_charge"] = values["restart_charge"] - 2
 
-            #charge = charge + 2
-            #tmp_method = "HF "
-            #runorca(tmp_method, values["basis_mp2"], "false", values["custombasis_mp2"], "true", values)
-            #charge = charge - 2
         runorca.runorca(values["method_mp2"], values["basis_mp2"], "false", values["custombasis_mp2"], "true", values)
         end_time1= time.time()
     
@@ -447,7 +401,7 @@ def rung4mp2(values, start_time_main):
 
         if (values["Ntotale"] == 1) or (values["Ntotale"] - values["Ntotalecore"] <= 1):
             E_hfL = E_mp2L
-            print("=== E_hfL === 00", E_hfL, E_mp2L, values["Ntotale"], values["Ntotalecore"])
+            #print("=== E_hfL === 00", E_hfL, E_mp2L, values["Ntotale"], values["Ntotalecore"])
         else:
             if values["flag_RIMP2"] == "true":
                 os.system("grep 'RI-MP2 CORRELATION ENERGY:' input.out | awk '{print $4}' > scr_lc7")
@@ -458,7 +412,7 @@ def rung4mp2(values, start_time_main):
             tmp = linecache.getline("scr_lc7",1).strip()
             E_hfL = float(tmp)
 
-            print("=== E_hfL ===", E_hfL, E_mp2L, values["Ntotale"], values["Ntotalecore"])
+            #print("=== E_hfL ===", E_hfL, E_mp2L, values["Ntotale"], values["Ntotalecore"])
             E_hfL = E_mp2L - E_hfL
 
         os.system("rm -f input* scr ")
@@ -484,10 +438,6 @@ def rung4mp2(values, start_time_main):
             #charge = charge - 2
             values["restart_charge"] = values["restart_charge"] - 2
 
-            #charge = charge + 2
-            #tmp_method = "HF "
-            #runorca(tmp_method, values["basis_hf3"], "false", values["custombasis_hf3"], "false", values)
-            #charge = charge - 2
         runorca.runorca(values["method_hf3"], values["basis_hf3"], "false", values["custombasis_hf3"], "false", values)
         end_time1 = time.time()
 
@@ -516,10 +466,6 @@ def rung4mp2(values, start_time_main):
             #charge = charge - 2
             values["restart_charge"] = values["restart_charge"] - 2
 
-            #charge = charge + 2
-            #tmp_method = "HF "
-            #runorca(tmp_method, values["basis_hf4"], "false", values["custombasis_hf4"], "false", values)
-            #charge = charge - 2
         runorca.runorca(values["method_hf4"], values["basis_hf4"], "false", values["custombasis_hf4"], "false", values)
         end_time1 = time.time()
 
@@ -588,19 +534,19 @@ def rung4mp2(values, start_time_main):
     else:
         HLC_SO = At_SO(sym[0], charge)
     
-    print("==check near HLC ",values["isatom"],Nat)
+    #print("==check near HLC ",values["isatom"],Nat)
     if values["HLCeqZERO"] == "true":
         HLC = 0
     else:
         if values["isatom"] != "true":
             if values["Na"] == values["Nb"]:
-                print("HLC atoms-1:",values["Na"],values["Nb"])
+                #print("HLC atoms-1:",values["Na"],values["Nb"])
                 HLC = - values["AA"] * values["Nb"]
             else:
-                print("HLC atoms-2:",values["Na"],values["Nb"])
+                #print("HLC atoms-2:",values["Na"],values["Nb"])
                 HLC = - values["ApAp"] * values["Nb"] - values["BB"] * (values["Na"]- values["Nb"])   # check
         else:
-             print("HLC atoms-3:",values["Na"],values["Nb"])
+             #print("HLC atoms-3:",values["Na"],values["Nb"])
              HLC = - (values["CC"] * values["Nb"] ) - (values["DD"] * (values["Na"] - values["Nb"]) )  # + At_SO(sym(1), charge)
         
         if values["isatom"] == "true":
@@ -619,7 +565,7 @@ def rung4mp2(values, start_time_main):
                 if sym[0] == "Na" and sym[1] == "Li": HLC = - values["EE"]
                 # if ( (trim(sym(1)) .eq. 'Be') .and. (trim(sym(2)) .eq. 'H' ) ) HLC = -EE
                 # if ( (trim(sym(1)) .eq. 'H' ) .and. (trim(sym(2)) .eq. 'Be') ) HLC = -EE
-    #print(values["AA"],values["ApAp"],values["BB"],values["CC"],values["DD"],values["EE"],values["Na"],values["Nb"])
+
     HLC  = HLC / 1000.0
     HLC_SO = HLC_SO / 1000.0
     values["HLC0"] = HLC

@@ -4,11 +4,16 @@ from  .dH_atoms         import  dH_atoms
 from  .HOF_atoms        import  HOF_atoms
 from  .Mol_SO           import  Mol_SO
 from  .nanb             import  nanb
+from  .sym2mass         import  sym2mass
 from  .NFC              import  NFC
 from  .principal_coord  import  principal_coord
 from  .printbas         import  printbas
-from  .sym2mass         import  sym2mass
 from  .uniqatoms        import  uniqatoms
-from  .run              import  run 
 from  .rung4mp2         import  rung4mp2
 from  .runorca          import  runorca 
+from  .get_geom         import get_geom
+from  .get_ctrl         import get_ctrl
+from  .get_val          import get_val
+from  .run              import  run
+
+#print("LOADED REQUIREMENTS FOR POPLE2")

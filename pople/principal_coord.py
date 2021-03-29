@@ -1,8 +1,13 @@
+import linecache
+import numpy as np
+
+from pople import sym2mass
+
 def principal_coord():
     """
-    Returns eigen value
-    Requires input.xyz to be present in pwd. input.xyz contains the cartesian coordinates of the molecule/radical/ion in xyz format
-    Used to characterize if the system is linear/non-linear
+    Returns eigen values.
+    Requires input.xyz to be present in pwd. input.xyz contains the cartesian coordinates of the molecule/radical/ion in xyz format.
+    Used to characterize if the system is linear/non-linear.
 
             Returns:
                 Ievals  (list, float): Eigen values

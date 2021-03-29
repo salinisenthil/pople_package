@@ -1,13 +1,13 @@
 def At_SO(at, charge):  # element symbol, charge
     """
-    Returns the At_SO!! of the element.
+    Returns energy correction for spin orbit coupling of the given element.
 
             Parameters:
                     at (char): Symbol of the element
                     charge (int): Charge on the element
 
             Returns:
-                    At_SO (float): At_SO!! of the element
+                    At_SO (float): Energy correction for spin orbit coupling of the element
     """
 
     At_SO = 0
