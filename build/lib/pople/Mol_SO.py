@@ -1,6 +1,6 @@
 def Mol_SO(Nat, multip, charge, sym, SO_3rdrow_mols_val):   # number of atoms, multiplicity, charge, array of atoms in molecule, value of SO_3rdrow_mols (from orca.inp file)
     """
-    Returns the Mol_SO!! of the element.
+    Returns the molecular spin orbit correction.
 
             Parameters:
                     Nat (int): Number of atoms in the molecule
@@ -10,7 +10,7 @@ def Mol_SO(Nat, multip, charge, sym, SO_3rdrow_mols_val):   # number of atoms, m
                     SO_3rdrow_mols_val (char) : true/false value of the SO_3rdrow_mols_val keyword
 
             Returns:
-                    Mol_SO (float): Mol_SO!! of the element
+                    Mol_SO (float): Molecular spin orbit correction
     """
 
     Mol_SO = 0
@@ -43,7 +43,7 @@ def Mol_SO(Nat, multip, charge, sym, SO_3rdrow_mols_val):   # number of atoms, m
                 # COMMMENT: paper has it for cation, but it looks like it is for neutral
                 if sort_sym[0] == 'Se' and sort_sym[1] == 'H':  Mol_SO=-4.21
     
-            if charge == +1:  ### RECHECK what the values of charge is!!!!!!!!!!!!!!!!!!!!!IMPORTANT
+            if charge == +1:  
                 if sort_sym[0] == 'K' and sort_sym[1] == 'Br':  Mol_SO=-2.99
                 if sort_sym[0] == 'H' and sort_sym[1] == 'As':  Mol_SO=-3.54
                 if sort_sym[0] == 'H' and sort_sym[1] == 'Br':  Mol_SO=-6.26

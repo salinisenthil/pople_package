@@ -1,12 +1,12 @@
 def dH_atoms(at):
     """
-    Returns the dH_atoms!! of the element.
+    Returns the enthalpy corrections of the element.
 
             Parameters:
                     at (char): Symbol of the element
 
             Returns:
-                    dH_atoms (float): dH_atoms!! of the element
+                    dH_atoms (float): Enthalpy corrections of the element
     """
 
     h = 6.626070040*(10**-34)    #6.626070040d-34

@@ -4,9 +4,9 @@ import numpy as np
 import datetime , time
 
 
-from pople_test import NFC
-from pople_test import uniqatoms
-from pople_test import printbas
+from pople import NFC
+from pople import uniqatoms
+from pople import printbas
 
 
 ####### runorca - S
@@ -52,14 +52,11 @@ def runorca(method, basis,optfreq,custombasis, correlated, values):
             linecache.clearcache()
             Nat = int(linecache.getline("inp.xyz",1).strip())
             l1_chr_mul = linecache.getline("inp.xyz",2)
-            #xyz_l1 = "* xyz  " + l1_chr_mul.strip() + " \n"
             if values["restart_check"] == "true":
                  test_l = "* xyz  " + str(values["restart_charge"]) + "  " + str(multip) + " \n"
             else:
                  test_l = "* xyz  " + l1_chr_mul.strip() + " \n"
-            #test_l = "* xyz  " + l1_chr_mul.strip() + " \n"
             com_f.write(test_l)
-            #com_f.write(xyz_l1)
             sym = []   # will contain list of atom symbols in the mol # same order
             
             for tmp_l in range(3,num_l_xyz+1):   ### what does NH do ???
@@ -84,13 +81,10 @@ def runorca(method, basis,optfreq,custombasis, correlated, values):
             f1 = open("rel_file.txt", "r")
             com_f.write(f1.read())
             f1.close()
-            print("check if rel_file.txt exists!!")
+#            print("check if rel_file.txt exists!!")
             with open("Thermochemistry.out", "a") as ther_chem:
                 ther_chem.write("check if rel_file.txt exists!!")
-# ! if ( G4MP2TM .and. load_rel_file) then
-#! %basis
-#! NewGTO I "old-DKH-SVP" end
-#! end
+
         if values["SCFDIIS"] == "true":
             com_f.write("%scf\n  DIISMaxEq 15\n")
             com_f.write("  directresetfreq 1\n")
@@ -158,18 +152,14 @@ def runorca(method, basis,optfreq,custombasis, correlated, values):
     if custombasis == "true":
         with open("input.com", "a") as com_f:
             uniq_atom_res = uniqatoms(sym)
-            fname = values["install_dir"] + basis
-            #print("fname is ", fname)
-            ##write(fname,'(a,a)')trim(adjustl(install_dir)), trim(adjustl(basis))  ## IMPORTANT
-            #print(uniq_atom_res)
+            fname =  basis
             if Nat == 1:  # check datatype
-                printbas(fname, sym[0], values["install_dir"])    ## what is fname, it should be the basis set keyword. but which one??
+                printbas(fname, sym[0])    ## what is fname, it should be the basis set keyword. but which one??
             else:
                 for iat1 in range(int(uniq_atom_res["N_ua"])):
                     pre2 = uniq_atom_res["uniq_sym"]
                     at_pr2 = pre2[iat1]
-                    #print(iat1, at_pr2)
-                    printbas(fname, at_pr2, values["install_dir"])
+                    printbas(fname, at_pr2)
             com_f.write("end\n")
 #   os.system("cat basis.com >> input.com")
 
