@@ -13,5 +13,5 @@
 5. Proton Affinity
 6. Intermolecular Binding Energy
 
-For installation, manual, and tutorials at https://moldis-group.github.io/Pople/
+For installation, manual, and tutorials at https://moldis-group.github.io/pople/
 
