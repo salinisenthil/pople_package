@@ -1,1 +1,2 @@
-include pople/templates/*
+include pople/basis/*
+include pople/tests/test*/*.*

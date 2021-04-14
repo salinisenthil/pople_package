@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '1.1.0'
+VERSION = '21.04.0'
 PACKAGE_NAME = 'pople'
 AUTHOR = 'Salini Senthil, Raghunathan Ramakrishnan'
 AUTHOR_EMAIL = 'salinis@tifrh.res.in'
-URL = 'https://github.com/salinisenthil/pople'
+URL = 'https://github.com/salinisenthil/pople_package'
 
 LICENSE = 'MIT License'
 DESCRIPTION = 'A toolkit for ab initio thermochemistry'
@@ -32,3 +32,4 @@ setup(name=PACKAGE_NAME,
       #packages = ['.','templates'],
       packages=find_packages(),
       )
+
