@@ -1,0 +1,5170 @@
+! B3LYP/G Grid7 RIJCOSX def2/J GridX9 Printbasis   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! DLPNO-CCSD(T) RI-MP2 def2-SVP/C RIJK def2/JK TightPNO Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%mdci
+  UseFullLMP2Guess true
+  TcutDOPre =  0.03
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! RI-MP2 def2-TZVP/C RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid7 RIJCOSX def2/J GridX9 Printbasis   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! DLPNO-CCSD(T) RI-MP2 def2-SVP/C RIJK def2/JK TightPNO Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%mdci
+  UseFullLMP2Guess true
+  TcutDOPre =  0.03
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! RI-MP2 def2-TZVP/C RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF RIJK def2/JK Printbasis   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00375832
+ H      0.00000000     0.00000000     0.74624168
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.75000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00360316
+ H      0.00000000     0.00000000     0.74639684
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.70000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.70000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.70000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.70000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! B3LYP/G Grid5   TightOpt  Freq  
+*xyz  0 1
+ H      0.00000000     0.00000000     0.00000000
+ H      0.00000000     0.00000000     0.70000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%geom
+  Calc_Hess true
+  Recalc_Hess 5 
+end
+%freq  Temp  273.15, 298.15
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   P  1
+       1               1.10000000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              18.73113696               0.03349460
+       2               2.82539437               0.23472695
+       3               0.64012169               0.81375733
+   S  1
+       1               0.16127776               1.00000000
+   end
+end
+! MP2   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore H  0  end
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.86500000               0.02549381
+       2               5.09479000               0.19037311
+       3               1.15879000               0.85216149
+   S  1
+       1               0.32584000               1.00000000
+   S  1
+       1               0.10274100               1.00000000
+   S  1
+       1               0.03600000               1.00000000
+   P  1
+       1               1.50000000               1.00000000
+   P  1
+       1               0.37500000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              33.87000000               0.02549486
+       2               5.09500000               0.19036277
+       3               1.15900000               0.85216202
+   S  1
+       1               0.32580000               1.00000000
+   S  1
+       1               0.10270000               1.00000000
+   P  1
+       1               0.72700000               1.00000000
+   end
+end
+! HF   
+*xyz  0 1
+ H      0.00000000     0.00000000    -0.02139720
+ H      0.00000000     0.00000000     0.72139720
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   H
+   S  3
+       1              82.64000000               0.02295076
+       2              12.41000000               0.17554012
+       3               2.82400000               0.86470355
+   S  1
+       1               0.79770000               1.00000000
+   S  1
+       1               0.25810000               1.00000000
+   S  1
+       1               0.08989000               1.00000000
+   P  1
+       1               1.40700000               1.00000000
+   P  1
+       1               0.38800000               1.00000000
+   D  1
+       1               1.05700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  16000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  0 2
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
+! CCSD(T)   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1           25180.10000000               0.00183296
+       2            3780.35000000               0.01403420
+       3             860.47400000               0.06909739
+       4             242.14500000               0.23745198
+       5              77.33490000               0.48303396
+       6              26.24700000               0.33985597
+   S  6
+       1             491.76500000              -0.00229739
+       2             116.98400000              -0.03071372
+       3              37.41530000              -0.11252807
+       4              13.78340000               0.04501633
+       5               5.45215000               0.58935336
+       6               2.22588000               0.46520629
+   P  6
+       1             491.76500000               0.00398940
+       2             116.98400000               0.03031771
+       3              37.41530000               0.12988003
+       4              13.78340000               0.32795107
+       5               5.45215000               0.45352710
+       6               2.22588000               0.25215406
+   S  3
+       1               3.18649000              -0.25182803
+       2               1.14427000               0.06158925
+       3               0.42037700               1.06018433
+   P  3
+       1               3.18649000              -0.01429931
+       2               1.14427000               0.32357233
+       3               0.42037700               0.74350777
+   S  1
+       1               0.14265700               1.00000000
+   P  1
+       1               0.14265700               1.00000000
+   D  1
+       1               0.75000000               1.00000000
+   end
+end
+! MP2   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+  NewNCore Cl  10  end
+end
+%basis 
+   NewGTO   Cl
+   S  6
+       1          105819.00000000               0.00074236
+       2           15872.00000000               0.00574732
+       3            3619.65000000               0.02964876
+       4            1030.80000000               0.11789980
+       5             339.90800000               0.36485320
+       6             124.53800000               0.58169679
+   S  3
+       1             124.53800000               0.13704431
+       2              49.51350000               0.62313803
+       3              20.80560000               0.29032791
+   S  1
+       1               6.46480000               1.00000000
+   S  1
+       1               2.52540000               1.00000000
+   S  1
+       1               0.53780000               1.00000000
+   S  1
+       1               0.19350000               1.00000000
+   S  1
+       1               0.04830000               1.00000000
+   P  1
+       1               0.04830000               1.00000000
+   P  4
+       1             589.78000000               0.00787333
+       2             139.85000000               0.06155460
+       3              44.79500000               0.27425140
+       4              16.61200000               0.74989939
+   P  2
+       1               6.59950000               0.61476400
+       2               2.71410000               0.44134160
+   P  1
+       1               0.95280000               1.00000000
+   P  1
+       1               0.35800000               1.00000000
+   P  1
+       1               0.12500000               1.00000000
+   D  1
+       1               4.80000000               1.00000000
+   D  1
+       1               1.20000000               1.00000000
+   D  1
+       1               0.30000000               1.00000000
+   D  1
+       1               0.72000000               1.00000000
+   F  1
+       1               1.40000000               1.00000000
+   F  1
+       1               0.35000000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          456100.00000000               0.00004932
+       2           68330.00000000               0.00038321
+       3           15550.00000000               0.00200948
+       4            4405.00000000               0.00838950
+       5            1439.00000000               0.02948440
+       6             520.40000000               0.08787599
+       7             203.10000000               0.21158976
+       8              83.96000000               0.36561155
+       9              36.20000000               0.34124635
+      10              15.83000000               0.10216257
+      11               6.33400000               0.00214250
+   S  9
+       1            4405.00000000              -0.00000220
+       2            1439.00000000              -0.00017114
+       3             520.40000000              -0.00127909
+       4             203.10000000              -0.00932923
+       5              83.96000000              -0.03989042
+       6              36.20000000              -0.10553551
+       7              15.83000000               0.00936218
+       8               6.33400000               0.51051093
+       9               2.69400000               0.57315049
+   S  8
+       1            1439.00000000               0.00000412
+       2             203.10000000               0.00021042
+       3              83.96000000               0.00084807
+       4              36.20000000               0.00459917
+       5              15.83000000               0.00045089
+       6               6.33400000              -0.07367222
+       7               2.69400000              -0.36206547
+       8               0.43130000               1.16614542
+   S  1
+       1               0.97680000               1.00000000
+   S  1
+       1               0.16250000               1.00000000
+   S  1
+       1               0.05910000               1.00000000
+   P  6
+       1             663.30000000               0.00247206
+       2             156.80000000               0.01975502
+       3              49.98000000               0.09099174
+       4              18.42000000               0.26318783
+       5               7.24000000               0.44907807
+       6               2.92200000               0.36018307
+   P  6
+       1             156.80000000               0.00003027
+       2              49.98000000              -0.00122509
+       3              18.42000000              -0.00601525
+       4               7.24000000              -0.02764176
+       5               2.92200000               0.00043381
+       6               0.38180000               1.00307328
+   P  1
+       1               1.02200000               1.00000000
+   P  1
+       1               0.13010000               1.00000000
+   P  1
+       1               0.04190000               1.00000000
+   D  1
+       1               4.61000000               1.00000000
+   D  1
+       1               1.01100000               1.00000000
+   D  1
+       1               0.33900000               1.00000000
+   F  1
+       1               0.70600000               1.00000000
+   end
+end
+! HF   
+*xyz  -1 1
+ Cl     0.00000000     0.00000000     0.00000000
+*
+%MaxCore  8000
+%scf
+   MaxIter 500 
+   Convergence  VeryTight
+end
+%pal nprocs  1 
+end
+%method
+  IntAcc 7.0
+end
+%basis 
+   NewGTO   Cl
+   S 11
+       1          834900.00000000               0.00002316
+       2          125000.00000000               0.00018011
+       3           28430.00000000               0.00094757
+       4            8033.00000000               0.00400045
+       5            2608.00000000               0.01445919
+       6             933.90000000               0.04564357
+       7             360.00000000               0.12318740
+       8             147.00000000               0.26412818
+       9              62.88000000               0.38223590
+      10              27.60000000               0.26978075
+      11              11.08000000               0.04857489
+   S  8
+       1            2608.00000000              -0.00006971
+       2             933.90000000              -0.00084917
+       3             360.00000000              -0.00640502
+       4             147.00000000              -0.03556829
+       5              62.88000000              -0.13397298
+       6              27.60000000              -0.22015234
+       7              11.08000000               0.29026375
+       8               5.07500000               0.90740037
+   S  8
+       1            2608.00000000               0.00001263
+       2             933.90000000              -0.00003511
+       3             147.00000000              -0.00105487
+       4              62.88000000              -0.00053358
+       5              27.60000000              -0.00086870
+       6              11.08000000               0.00428050
+       7               5.07500000              -0.26475649
+       8               2.27800000              -0.75962225
+   S  1
+       1               0.77750000               1.00000000
+   S  1
+       1               0.35270000               1.00000000
+   S  1
+       1               0.14310000               1.00000000
+   S  1
+       1               0.05190000               1.00000000
+   P  7
+       1            1703.00000000               0.00049435
+       2             403.60000000               0.00422625
+       3             130.30000000               0.02236943
+       4              49.05000000               0.08369701
+       5              20.26000000               0.22493607
+       6               8.78700000               0.39659166
+       7               3.91900000               0.43045763
+   P  6
+       1             130.30000000              -0.00159193
+       2              49.05000000              -0.00928309
+       3              20.26000000              -0.06682959
+       4               8.78700000              -0.14880369
+       5               3.91900000              -0.38231127
+       6               1.76500000               1.32471960
+   P  1
+       1               0.72070000               1.00000000
+   P  1
+       1               0.28390000               1.00000000
+   P  1
+       1               0.10600000               1.00000000
+   P  1
+       1               0.03760000               1.00000000
+   D  1
+       1               5.19100000               1.00000000
+   D  1
+       1               1.27600000               1.00000000
+   D  1
+       1               0.58300000               1.00000000
+   D  1
+       1               0.24300000               1.00000000
+   F  1
+       1               0.42300000               1.00000000
+   F  1
+       1               1.08900000               1.00000000
+   G  1
+       1               0.82700000               1.00000000
+   end
+end
