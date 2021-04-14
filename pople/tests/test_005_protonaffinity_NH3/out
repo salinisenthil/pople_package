@@ -1,0 +1,33 @@
+
+ Printing detailed output in Thermochemistry.out
+
+ Opt/Freq Started: Step 1/5
+ Opt/Freq Completed
+ CCSD(T)  Started: Step 2/5
+ CCSD(T)  Completed
+ MP2/L    Started: Step 3/5
+ MP2/L    Completed
+ HF/VTZ   Started: Step 4/5
+ HF/VTZ   Completed
+ HF/VQZ   Started: Step 5/5
+ HF/VQZ   Completed
+ --- Terminating ---
+
+
+
+ Printing detailed output in Thermochemistry.out
+
+ Opt/Freq Started: Step 1/5
+ Opt/Freq Completed
+ CCSD(T)  Started: Step 2/5
+ CCSD(T)  Completed
+ MP2/L    Started: Step 3/5
+ MP2/L    Completed
+ HF/VTZ   Started: Step 4/5
+ HF/VTZ   Completed
+ HF/VQZ   Started: Step 5/5
+ HF/VQZ   Completed
+ --- Terminating ---
+
+
+ Electron affinity of Cl atom is is  3.6421649462081915  eV

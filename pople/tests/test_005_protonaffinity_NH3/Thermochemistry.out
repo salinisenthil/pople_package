@@ -1,0 +1,128 @@
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:14:43  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 2.34 s
+ > Elapsed time =                  2.35 s
+
+ > MP2/L done in                   4.03 s
+ > Elapsed time =                  6.38 s
+
+ > HF/VTZ done in                  3.83 s
+ > Elapsed time =                 10.20 s
+
+ > HF/VQZ done in                  8.41 s
+ > Elapsed time =                 18.61 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.47200 
+ A' = 9.76900
+ B  = 3.10200 
+ C  = 9.74100 
+ D  = 2.11500 
+ E  = 2.37900 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =       -459.56747037 hartree            
+               dE(MP2) =         -0.09272149 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.01098006 hartree     <-- HF-level basis set correction
+                dE(SO) =         -0.00134000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.03133800 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =       -459.70384992 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =       -459.70384992 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =       -459.70243364 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =       -459.70148946 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                 18.61 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:15:02  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 1.71 s
+ > Elapsed time =                  1.71 s
+
+ > MP2/L done in                   2.92 s
+ > Elapsed time =                  4.64 s
+
+ > HF/VTZ done in                  2.83 s
+ > Elapsed time =                  7.47 s
+
+ > HF/VQZ done in                  5.72 s
+ > Elapsed time =                 13.19 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.47200 
+ A' = 9.76900
+ B  = 3.10200 
+ C  = 9.74100 
+ D  = 2.11500 
+ E  = 2.37900 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =       -459.66356296 hartree            
+               dE(MP2) =         -0.12448835 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.01068169 hartree     <-- HF-level basis set correction
+                dE(SO) =          0.00000000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.03896400 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =       -459.83769700 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =       -459.83769700 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =       -459.83628073 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =       -459.83533654 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                 13.20 s
+
