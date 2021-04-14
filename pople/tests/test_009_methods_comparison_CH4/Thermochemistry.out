@@ -1,0 +1,466 @@
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:31:52  IST  *
+
+ *  Input atomic coordinates (Angstroem)  *
+
+ C      0.00000000     0.00000000     0.00000000
+ H      1.09336000     0.00000000     0.00000000
+ H     -0.36445000     0.00000000    -1.03083000
+ H     -0.36445000    -0.97188000     0.34361000
+ H     -0.36445000     0.97188000     0.34361000
+
+ *  Optimized atomic coordinates (Angstroem)  *
+
+ C      0.00000022    -0.00000004     0.00000000
+ H     -0.13652980    -1.08337018     0.00209112
+ H      1.06692373     0.23240096    -0.00163452
+ H     -0.46621731     0.42389235    -0.89178986
+ H     -0.46417930     0.42707732     0.89133326
+
+ *  Unscaled harmonic wavenumbers (cm^-1)  *
+
+     1      1343.1200
+     2      1343.1300
+     3      1343.1400
+     4      1564.0000
+     5      1564.0200
+     6      3042.7600
+     7      3156.5700
+     8      3156.5800
+     9      3156.5900
+
+ *  Scaled harmonic wavenumbers (cm^-1), scaling factor used is 0.9854  *
+
+     1      1323.5104
+     2      1323.5203
+     3      1323.5302
+     4      1541.1656
+     5      1541.1853
+     6      2998.3357
+     7      3110.4841
+     8      3110.4939
+     9      3110.5038
+
+ > Opt+Freq done in               68.25 s
+ > Elapsed time =                 68.25 s
+
+ > CCSD(T) done in                 2.23 s
+ > Elapsed time =                 70.49 s
+
+ > MP2/L done in                   5.12 s
+ > Elapsed time =                 75.61 s
+
+ > HF/VTZ done in                  3.00 s
+ > Elapsed time =                 78.61 s
+
+ > HF/VQZ done in                 14.74 s
+ > Elapsed time =                 93.35 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.47200 
+ A' = 9.76900
+ B  = 3.10200 
+ C  = 9.74100 
+ D  = 2.11500 
+ E  = 2.37900 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =        -40.35468716 hartree            
+               dE(MP2) =         -0.07439807 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00486960 hartree     <-- HF-level basis set correction
+                dE(SO) =          0.00000000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.03788800 hartree     <-- higher-level correction
+               dE(ZPE) =          0.04415711 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00287136 hartree     <-- thermal correction
+
+     Electronic Energy =        -40.47184283 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =        -40.42768573 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =        -40.42481437 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =        -40.42387018 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                 93.35 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:33:25  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 1.71 s
+ > Elapsed time =                  1.72 s
+
+ > MP2/L done in                   2.13 s
+ > Elapsed time =                  3.84 s
+
+ > HF/VTZ done in                  1.95 s
+ > Elapsed time =                  5.79 s
+
+ > HF/VQZ done in                  3.06 s
+ > Elapsed time =                  8.86 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.47200 
+ A' = 9.76900
+ B  = 3.10200 
+ C  = 9.74100 
+ D  = 2.11500 
+ E  = 2.37900 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =        -37.75127948 hartree            
+               dE(MP2) =         -0.02541039 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00347626 hartree     <-- HF-level basis set correction
+                dE(SO) =         -0.00014000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.01397100 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =        -37.79427713 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =        -37.79427713 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =        -37.79286085 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =        -37.79191667 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                  8.86 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:33:34  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 1.14 s
+ > Elapsed time =                  1.15 s
+
+ > MP2/L done in                   1.22 s
+ > Elapsed time =                  2.37 s
+
+ > HF/VTZ done in                  1.17 s
+ > Elapsed time =                  3.53 s
+
+ > HF/VQZ done in                  1.24 s
+ > Elapsed time =                  4.78 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.47200 
+ A' = 9.76900
+ B  = 3.10200 
+ C  = 9.74100 
+ D  = 2.11500 
+ E  = 2.37900 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =         -0.49823291 hartree            
+               dE(MP2) =         -0.00158501 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00016073 hartree     <-- HF-level basis set correction
+                dE(SO) =          0.00000000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.00211500 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =         -0.50209365 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =         -0.50209365 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =         -0.50067737 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =         -0.49973319 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                  4.78 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:33:39  IST  *
+
+ *  Input atomic coordinates (Angstroem)  *
+
+ C      0.00000000     0.00000000     0.00000000
+ H      1.09336000     0.00000000     0.00000000
+ H     -0.36445000     0.00000000    -1.03083000
+ H     -0.36445000    -0.97188000     0.34361000
+ H     -0.36445000     0.97188000     0.34361000
+
+ *  Optimized atomic coordinates (Angstroem)  *
+
+ C     -0.00000123    -0.00000000     0.00000079
+ H      0.68965231     0.00058928     0.84651880
+ H     -1.02800594    -0.00015760     0.36801569
+ H      0.16890630     0.89130126    -0.60766618
+ H      0.16946196    -0.89173293    -0.60687766
+
+ *  Unscaled harmonic wavenumbers (cm^-1)  *
+
+     1      1343.3600
+     2      1343.3600
+     3      1343.3800
+     4      1564.1100
+     5      1564.1700
+     6      3042.9600
+     7      3156.5700
+     8      3156.6100
+     9      3156.6700
+
+ *  Scaled harmonic wavenumbers (cm^-1), scaling factor used is 0.9854  *
+
+     1      1323.7469
+     2      1323.7469
+     3      1323.7667
+     4      1541.2740
+     5      1541.3331
+     6      2998.5328
+     7      3110.4841
+     8      3110.5235
+     9      3110.5826
+
+ > Opt+Freq done in              156.47 s
+ > Elapsed time =                156.47 s
+
+ > CCSD(T) done in                 3.39 s
+ > Elapsed time =                159.86 s
+
+ > MP2/L done in                   2.68 s
+ > Elapsed time =                162.54 s
+
+ > HF/VTZ done in                  2.11 s
+ > Elapsed time =                164.65 s
+
+ > HF/VQZ done in                  3.06 s
+ > Elapsed time =                167.70 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.51842 
+ A' = 9.79309
+ B  = 3.19566 
+ C  = 9.80448 
+ D  = 2.05800 
+ E  = 2.38393 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =        -40.35463487 hartree            
+               dE(MP2) =         -0.07404326 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00486642 hartree     <-- HF-level basis set correction
+                dE(SO) =          0.00000000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.03807368 hartree     <-- higher-level correction
+               dE(ZPE) =          0.04415998 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00287132 hartree     <-- thermal correction
+
+     Electronic Energy =        -40.47161823 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =        -40.42745825 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =        -40.42458693 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =        -40.42364274 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                167.71 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:36:27  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 3.28 s
+ > Elapsed time =                  3.28 s
+
+ > MP2/L done in                   2.02 s
+ > Elapsed time =                  5.29 s
+
+ > HF/VTZ done in                  1.62 s
+ > Elapsed time =                  6.91 s
+
+ > HF/VQZ done in                  1.64 s
+ > Elapsed time =                  8.56 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.51842 
+ A' = 9.79309
+ B  = 3.19566 
+ C  = 9.80448 
+ D  = 2.05800 
+ E  = 2.38393 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =        -37.75120455 hartree            
+               dE(MP2) =         -0.02541434 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00347684 hartree     <-- HF-level basis set correction
+                dE(SO) =         -0.00014000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.01392048 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =        -37.79415621 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =        -37.79415621 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =        -37.79273993 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =        -37.79179575 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                  8.56 s
+
+ 
+ +--------------------------------------------------------------------+
+ |                                                                    |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   https://moldis-group.github.io/pople/                            |
+ |                                                                    |
+ |   Standard enthalpy parameters available for the following atoms   |
+ |                                                                    |
+ |   ----                                                             |
+ |   |H |                                                             |
+ |   --------    ---------------------                                |
+ |   |Li| Be|    |B  |C  |N  |O  |F  |                                |
+ |   |Na| Mg|    |Al |Si |P  |S  |Cl |                                |
+ |   |K | Ca|    |Ga |Ge |As |Se |Br |                                |
+ |   --------    ---------------------                                |
+ |                                                                    |
+ |   Credits: see https://moldis-group.github.io/pople/credits.html   |
+ |                                                                    |
+ +--------------------------------------------------------------------+
+             
+ *  Start time:  Wednesday  April 14, 2021   11:36:35  IST  *
+
+ [ NOTE: Geometry optimization and frequency calculations are skipped for atom ]
+
+ > CCSD(T) done in                 1.61 s
+ > Elapsed time =                  1.61 s
+
+ > MP2/L done in                   1.42 s
+ > Elapsed time =                  3.03 s
+
+ > HF/VTZ done in                  1.20 s
+ > Elapsed time =                  4.23 s
+
+ > HF/VQZ done in                  1.19 s
+ > Elapsed time =                  5.42 s
+ 
+ *  HLC parameters in milli hartree  *
+ 
+ A  = 9.51842 
+ A' = 9.79309
+ B  = 3.19566 
+ C  = 9.80448 
+ D  = 2.05800 
+ E  = 2.38393 
+
+           Temperature =        298.15000000 kelvin                     
+              Pressure =          1.00000000 atm
+
+            E(CCSD(T)) =         -0.49823291 hartree            
+               dE(MP2) =         -0.00158501 hartree     <-- post-HF basis set correction                      
+                dE(HF) =         -0.00016073 hartree     <-- HF-level basis set correction
+                dE(SO) =          0.00000000 hartree     <-- spin-orbit correction
+               dE(HLC) =         -0.00205800 hartree     <-- higher-level correction
+               dE(ZPE) =          0.00000000 hartree     <-- zero-point correction
+           dE(Thermal) =          0.00141628 hartree     <-- thermal correction
+
+     Electronic Energy =         -0.50203665 hartree     <-- E = E(CCSD(T)) + dE(MP2) + dE(HF) + dE(SO) + dE(HLC) 
+  Internal Energy(0 K) =         -0.50203665 hartree     <-- U0 = E + E(ZPE)
+  Internal Energy(T K) =         -0.50062037 hartree     <-- UT = U0 + E(Thermal)
+         Enthalpy(T K) =         -0.49967619 hartree     <-- HT = UT + kB*T       
+
+ > Enthalpy calculation done
+ > Elapsed time =                  5.42 s
+
