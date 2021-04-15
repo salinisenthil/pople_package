@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '21.04.0'
+VERSION = '21.4.1'
 PACKAGE_NAME = 'pople'
 AUTHOR = 'Salini Senthil, Raghunathan Ramakrishnan'
 AUTHOR_EMAIL = 'salinis@tifrh.res.in'
