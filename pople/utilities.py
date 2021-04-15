@@ -29,7 +29,7 @@ def print_header():
         cs1 = ( f""" 
  +--------------------------------------------------------------------+
  |                                                                    |
- |   Pople, A toolkit for ab initio thermochemistry (v21.04.0)        |
+ |   Pople, A toolkit for ab initio thermochemistry (v21.4.1)         |
  |   https://moldis-group.github.io/pople/                            |
  |                                                                    |
  |   Standard enthalpy parameters available for the following atoms   |
